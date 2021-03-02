@@ -1,4 +1,4 @@
-module github.com/bartmika/growlog-cli
+module github.com/nikoarias/growlog-cli
 
 go 1.15
 
