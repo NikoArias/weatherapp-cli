@@ -1,17 +1,15 @@
+
 package models
 
-import(
-  "time"
+import (
+"time"
 )
 
-type Crop struct {
-    id string
-    name string
-    createdAt time.Time
-}
-
-type CropRepository interface {
-    Insert(c *Crop) error
-    Update(c *Crop) error
-    GetById(id string)(*Crop error)
+type TimeSeriesDatum struct {
+             Temperature float64
+             Humidity    float64
+             Pressure    float64
+             Co2         float64
+             Tvoc        float64
+             Timestamp   time.Time
 }
